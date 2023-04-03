@@ -9,7 +9,7 @@ pipeline {
             steps {
             
                 echo 'Initial : Delete  containers and image'
-                 dir('dockercompose') { // change directory to Lab_docker_Jenkins
+                 dir('tool-hw10') { // change directory to Lab_docker_Jenkins
                     echo "Current path is ${pwd()}"
                     sh "docker-compose down --rmi all --volumes || true"
                 }
