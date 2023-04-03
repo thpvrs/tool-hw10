@@ -15,7 +15,7 @@ services:
     build: ./hello-app
     image: 63070104/frontend:1.0
     ports: 
-      - 3000:80
+      - 3000:3000
     links:
       - backend
     networks:
